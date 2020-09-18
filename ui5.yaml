@@ -17,7 +17,7 @@ server:
       mountPath: /sap
       configuration:
         baseUri: "https://s4.skye.no:443/sap"
-        auth: "nicholas:Kjokoks5"
+        auth: "nicholas:<>"
         client: "400"
 builder:
   customTasks:
