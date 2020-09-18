@@ -4,7 +4,7 @@ jQuery.sap.declare("ui.ssuite.s2p.mm.pur.pr.prcss.s1.MM_PR_PRCS1Extension.Compon
 sap.ui.component.load({
 	name: "ui.ssuite.s2p.mm.pur.pr.prcss.s1",
 	// Use the below URL to run the extended application when SAP-delivered application is deployed on SAPUI5 ABAP Repository
-	url: "/sap/bc/ui5_ui5/sap/MM_PR_PRCS1"
+	url: "https://s4.skye.no/sap/bc/ui5_ui5/sap/MM_PR_PRCS1"
 		// we use a URL relative to our own component
 		// extension application is deployed with customer namespace
 });
