@@ -12,16 +12,13 @@ server:
       configuration:
         port: 35729
         path: webapp
-    - name: ui5-middleware-route-proxy
+    - name: ui5-middleware-proxy-basicauth
       afterMiddleware: compression
+      mountPath: /sap
       configuration:
-        debug: false
-        /sap/opu/odata/sap/:
-          target: https://s4.skye.no:443
-          auth:
-            fromEnv: false
-            user: <youruser>
-            pass: <yourpassword>
+        baseUri: "https://s4.skye.no:443/sap"
+        auth: "nicholas:Kjokoks5"
+        client: "400"
 builder:
   customTasks:
     - name: webide-extension-task-updateManifestJson
